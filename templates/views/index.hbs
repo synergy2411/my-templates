@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<body class="container">
+    {{> header}}
+    <br>
+    <hr>
+    <h1>Weather App</h1>
+    <p>Welcome Mr. {{ username }}</p>
+    <p>Token : {{ token }}</p>
+    <form action="/login">
+        <input type="text" name="username" id="username">
+        <button type="submit" class="btn btn-default">Move to next page</button>
+        <button class="btn btn-default" id="btnMove">Get Data</button>
+    </form>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
