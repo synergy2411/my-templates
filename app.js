@@ -18,7 +18,7 @@ hbs.registerPartials(partialsPath);
 
 
 function authenticate(req, res, next) {
-    console.log("Authenticating...")
+    console.log("Authenticating..")
     next();
 }
 
