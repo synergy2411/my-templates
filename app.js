@@ -3,7 +3,7 @@ var hbs = require("hbs");
 var path = require("path");
 var log = require("./middlewares/logger")
 
-var port = process.env.Port || 3000;
+var port = process.env.PORT || 3000;
 
 var app = express();
 var partialsPath = path.join(__dirname, "/templates/partials");
